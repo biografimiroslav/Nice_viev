@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/utils/_utils.scss"],"names":[],"mappings":"AAAA,IACI,cACA,WACA,YAGA,EACA,qBAGA,GACA,gBAGA,uBAQA,WACA,YAGA,QACA","file":"main.min.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/utils/_utils.scss","../scss/components/_philosophy.scss"],"names":[],"mappings":"AAAA,IACI,cACA,WACA,YAGA,EACA,qBAGA,GACA,gBAGA,uBAQA,WACA,YAGA,QACA,kBC3BJ,iBACA,+BACA,gBACA,eACA,cAGA,kBACA,+BACA,gBACA,eACA,cAGA,iBACA,+BACA,gBACA,eACA","file":"main.min.css"}
