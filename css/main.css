@@ -34,6 +34,14 @@ address {
   --third-family: "Montserrat", sans-serif;
 }
 
+.container {
+  width: 1174px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .header {
   padding-top: 40px;
   padding-bottom: 40px;
