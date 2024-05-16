@@ -1,0 +1,61 @@
+.get_in_touch {
+    background-color: #EDE9E3;
+}
+
+.get_in_touch_tex {
+    font-family: var(--font-family);
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 8px;
+    font-size: 40px;
+    color: #7e6d53;
+}
+
+.get_in_touch_text {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 24px;
+    color: #7e6d53;
+    text-align: center;
+}
+
+.contact {
+    border-radius: 16px;
+    padding: 23px 0px 45px 0px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 700px;
+    background-color: #7E6D53;
+}
+
+.contact-list {
+    margin-left: 74px;
+}
+
+.contact-item {
+    padding-top: 24px;
+}
+
+.contact-p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.contact-butt {
+    border-radius: 8px;
+    padding: 6px 0px;
+    height: 54px;
+    border: none;
+width: 224px;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 24px;
+    color: #7e6d53;
+    margin-top: 52px;
+    margin-left: 124px;
+}
