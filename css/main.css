@@ -221,6 +221,83 @@ address {
   margin-left: 124px;
 }
 
+.footer {
+  padding-top: 32px;
+  padding-bottom: 42px;
+  background: linear-gradient(213deg, #2d2a22 0%, #7e6d53 100%);
+  position: relative;
+}
+
+.footer > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  fill: #fff;
+}
+
+.footer-title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-list-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-menu-link {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #fffefe;
+}
+
+.footer-contakts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.privacy-policy {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
+}
+
+.privacy-policy {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 121%;
+  color: #979797;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.social-svg {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+}
+
+.footer-box4 {
+  position: absolute;
+  bottom: 0px;
+}
+
 .appartaments-title {
   font-family: var(--font-family);
   font-weight: 500;
