@@ -1,5 +1,22 @@
-.Infrastructure{
+.infrastructure{
   background-color: #fcfcfb;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.infrastructure-title{
+  font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 40px;
+    color: #7e6d53;
+    margin-bottom: 20px;
+}
+
+.infrastructure-bg{
+background-image: url(../../img/Infrastructure.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+width: 1144px;
+height: 486px;
 }
