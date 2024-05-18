@@ -90,7 +90,7 @@ address {
 .main-page {
   padding-top: 32px;
   padding-bottom: 100px;
-  background-image: url(../../img/main-pages.png);
+  background-image: url(../img/main-pages.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -209,7 +209,7 @@ address {
 }
 
 .infrastructure-bg {
-  background-image: url(../../img/Infrastructure.png);
+  background-image: url(../img/Infrastructure.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
