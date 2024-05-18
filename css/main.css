@@ -147,6 +147,8 @@ address {
 
 .philosophy > .container {
   display: flex;
+  padding: 0;
+  width: 100%;
 }
 
 .philosophy-bg {
@@ -156,15 +158,20 @@ address {
   width: 1280px;
   height: 340px;
   display: flex;
+  align-items: center;
 }
 
 .philosophy-list {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  margin-right: 122px;
 }
 
 .philosophy-list > .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   flex-basis: calc((100% - 72px) / 2);
 }
 
@@ -173,6 +180,7 @@ address {
   font-weight: 400;
   font-size: 16px;
   color: #7e6d53;
+  margin-top: 24px;
 }
 
 .philosophy-box {
@@ -185,6 +193,7 @@ address {
   font-weight: 300;
   font-size: 24px;
   color: #2d2a22;
+  margin-bottom: 16px;
 }
 
 .philosophy-info {
