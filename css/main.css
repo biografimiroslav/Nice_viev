@@ -136,7 +136,7 @@ address {
 }
 
 .philosophy {
-  background-image: url(../../img/philosophy.png);
+  background-image: url(../img/philosophy.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 1280px;
