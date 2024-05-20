@@ -46,7 +46,7 @@
                     </a>
                 </li>
             </ul>
-            <button class="header-button">
+            <button class="header-button" data-modal-open type="button">
                 Contuct us
             </button>
         </div>
@@ -254,6 +254,42 @@
         </div>
 
     </footer>
+    <!--модільне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <h2 class="modal-title">Leave your contacts and we will contact you</h2>
+            <button type="submit" class="modal-btn">
+                <svg class="modal-icon-close" width="32" height="32">
+                    <use href="./img/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form class="modal-form">
+                <div class="form-fiel">
+                    <label for="username" class="form-label">Name</label>
+                    <div class="modal-position">
+                        <input type="text" id="username" class="form-input" autofocus required placeholder="Yuliia ">
+                    </div>
+                </div>
+                <div class="form-fiel">
+                    <label for="phone" class="form-label">Telephone</label>
+                    <div class="modal-position">
+                        <input type="tel" id="phone" class="form-input" autofocus required placeholder="+380">
+                    </div>
+                </div>
+    
+                <div class="form-fiel">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="modal-position">
+                        <input type="email" id="email" class="form-input" autofocus required placeholder="Contact@gmail.com">
+                    </div>
+                </div>
+    
+                
+            </form>
+            <button class="modal-submit" type="submit" data-modal-close>Contact us</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
