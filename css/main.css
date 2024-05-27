@@ -35,11 +35,26 @@ address {
 }
 
 .container {
-  width: 1174px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1174px) {
+  .container {
+    max-width: 1174px;
+  }
 }
 
 .header {
