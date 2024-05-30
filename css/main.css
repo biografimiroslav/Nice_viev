@@ -35,11 +35,26 @@ address {
 }
 
 .container {
-  width: 1174px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1174px) {
+  .container {
+    max-width: 1174px;
+  }
 }
 
 .header {
@@ -395,24 +410,62 @@ address {
   bottom: 10px;
 }
 
-.appartaments {
-  padding-top: 100px;
-  padding-bottom: 100px;
+@media screen and (min-width: 320px) {
+  .appartaments {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .appartaments {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1174px) {
+  .appartaments {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .appartaments-title {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 40px;
   color: #7e6d53;
-  margin-bottom: 40px;
+}
+@media screen and (min-width: 320px) {
+  .appartaments-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .appartaments-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .appartaments-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 32px;
-  margin-bottom: 28px;
+}
+@media screen and (min-width: 320px) {
+  .appartaments-list {
+    gap: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .appartaments-list {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1174px) {
+  .appartaments-list {
+    gap: 32px;
+  }
 }
 
 .appartaments-list > .item {
@@ -429,18 +482,46 @@ address {
 .appartaments-title3 {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 32px;
   line-height: 121%;
   color: #2d2a22;
   margin-top: 14px;
+}
+@media screen and (min-width: 320px) {
+  .appartaments-title3 {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .appartaments-title3 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1174px) {
+  .appartaments-title3 {
+    font-size: 32px;
+  }
 }
 
 .appartaments-text {
   font-family: var(--font-family);
   font-weight: 300;
-  font-size: 24px;
   line-height: 130%;
   color: #7e6d53;
+}
+@media screen and (min-width: 320px) {
+  .appartaments-text {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .appartaments-text {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1174px) {
+  .appartaments-text {
+    font-size: 24px;
+  }
 }
 
 .appartaments-button {
@@ -458,6 +539,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 28px;
 }
 
 .appartaments-button:hover,
