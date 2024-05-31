@@ -233,12 +233,24 @@ address {
 }
 
 .infrastructure-bg {
+  position: relative;
   background-image: url(../img/Infrastructure.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 1144px;
   height: 486px;
+}
+
+.infrastructure-box {
+  position: absolute;
+  top: 8px;
+  right: 168px;
+  border-radius: 8px;
+  width: 331px;
+  height: 470px;
+  background: #fcfcfb;
+  opacity: 0.8;
 }
 
 .galery {
