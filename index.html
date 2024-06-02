@@ -47,7 +47,7 @@
                     </a>
                 </li>
             </ul>
-            <button class="header-button" data-modal-open type="button">
+            <button class="header-button" type="button">
                 Contuct us
             </button>
         </div>
@@ -61,7 +61,7 @@
                 <p class="main-page-text">
                     For your comfortable life with your famaly
                 </p>
-                <button class="main-page-btn">
+                <button class="main-page-btn" data-modal-open type="button">
                     Contact us
                 </button>
             </div>
@@ -187,7 +187,7 @@
                             <p class="contact-p">(+33)7 00 55 54 79</p>
                         </li>
                     </ul>
-                    <button class="contact-butt">Contact us</button>
+                    <button class="contact-butt" type="button" data-modal-open-btn>Contact us</button>
                 </div>
             </div>
         </section>
@@ -261,7 +261,7 @@
         </div>
 
     </footer>
-    <!--модільне вікно -->
+    <!--модільне вікно main-pages -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <h2 class="modal-title">Leave your contacts and we will contact you</h2>
@@ -297,7 +297,34 @@
             <button class="modal-submit" type="submit" data-modal-close>Contact us</button>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+
+    <!--модільне вікно touch-->
+    <div class="backdrop is-hidden" data-modal-touch>
+        <div class="modal-touch">
+            <h2 class="modal-title-touch">House 1</h2>
+            <button type="submit" class="modal-btn">
+                <svg class="modal-icon-close" width="32" height="32">
+                    <use href="./img/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="contact-box">
+                <img src="./img/modal-img.jpg" alt="" width="238">
+                <div>
+                    <address class="address">
+                        <p class="address-text">Total area: 50.2 m2</p>
+                        <p class="address-text">Rooms: 1</p>
+                        <p class="address-text">from 1000 dol/m2</p>
+                        <p class="address-text-smol">about 50 200 dollars</p>
+                        <button class="modal-submit--sais" type="submit" data-modal-close-btn>Contact us</button>
+                    </address>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/touch-modal.js" type="module"></script>
 </body>
 
 </html>
