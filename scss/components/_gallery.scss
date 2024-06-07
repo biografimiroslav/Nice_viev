@@ -1,56 +1,58 @@
 .galery {
-    background-color: #EDE9E3;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  background-color: #ede9e3;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .galery-title {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 40px;
-    color: #7e6d53;
-    margin-bottom: 20px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  color: #7e6d53;
+  margin-bottom: 20px;
 }
 
 .galery-box {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    gap: 3x;
+  }
+
+  @media screen and (min-width: 1174px) {
     gap: 32px;
-
-    @media screen and (min-width: 320px) {}
-
-    @media screen and (min-width: 768px) {}
-
-    @media screen and (min-width: 1280px) {}
+  }
 }
 
 .galery-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 320px) {
+    gap: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 18px;
+  }
+
+  @media screen and (min-width: 1174px) {
     gap: 32px;
+  }
 }
 
 .galery-btn {
-    @media screen and (min-width: 320px) {
-        display: none;
-    }
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
 
-    @media screen and (min-width: 768px) {
-        display: block;
-    }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 
-    @media screen and (min-width: 1280px) {
-        display: block;
-    }
-}
-
-.galery-box-img {
-    @media screen and (min-width: 320px) {
-        width: 159px;
-    }
-
-    @media screen and (min-width: 768px) {}
-
-    @media screen and (min-width: 1280px) {}
+  @media screen and (min-width: 1174px) {
+    display: block;
+  }
 }

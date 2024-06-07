@@ -154,9 +154,57 @@
                             fill="black" />
                     </svg>
                     <ul class="galery-list">
-                        <li class="item"><img src="./img/galery-1.jpg" alt="" class="galery-box-img"></li>
-                        <li class="item"><img src="./img/galery-2.jpg" alt="" class="galery-box-img"></li>
-                        <li class="item"><img src="./img/galery-3.jpg" alt="" class="galery-box-img"></li>
+                        <li class="item">
+                            <picture>
+                                <source srcset="./img/galery-3.jpg, /img/galery-3.jpg" type="image/webp"
+                                    media="(min-width: 1174px)">
+
+                                <source
+                                    srcset="./img/tablet/galery@1x-tablet.jpg 1x, ./img/tablet/galery@2x-tablet.jpg 2x"
+                                    type="image/webp" media="(min-width: 768px)">
+
+                                <source
+                                    srcset="./img/mobile/galery@2x-mobile.jpg 1x, ./img/mobile/galery@2x-mobile.jpg 2x"
+                                    type="image/webp" media="(max-width: 767px)">
+
+                                <img src="./img/galery-3.jpg" alt="" width="77">
+                            </picture>
+                        </li>
+
+                        <li class="item">
+                            <picture>
+                                <source srcset="./img/galery-2.jpg, ./img/galery-2.jpg" type="image/webp"
+                                    media="(min-width: 1174px)">
+
+                                <source
+                                    srcset="./img/tablet/galery@1x-tablet-1.jpg 1x, ./img/tablet/galery@2x-tablet-1.jpg 2x"
+                                    type="image/webp" media="(min-width: 768px)">
+
+                                <source
+                                    srcset="./img/mobile/galery@2x-mobile-2.jpg 1x, ./img/mobile/galery@2x-mobile-2.jpg 2x"
+                                    type="image/webp" media="(max-width: 767px)">
+
+                                <img src="./img/galery-2.jpg" alt="" width="596">
+                            </picture>
+
+                        </li>
+                        <li class="item">
+                            <picture>
+                                <source srcset="./img/galery-1.jpg, /img/galery-1.jpg" type="image/webp"
+                                    media="(min-width: 1174px)">
+
+                                <source
+                                    srcset="./img/tablet/galery@1x-tablet-2.jpg 1x, ./img/tablet/galery@2x-tablet-2.jpg 2x"
+                                    type="image/webp" media="(min-width: 768px)">
+
+                                <source
+                                    srcset="./img/mobile/galery@2x-mobile-1.jpg  1x, ./img/mobile/galery@2x-mobile-1.jpg 2x"
+                                    type="image/webp" media="(max-width: 767px)">
+
+                                <img src="./img/galery-1.jpg" alt="" width="77">
+                            </picture>
+
+                        </li>
                     </ul>
                     <svg class="galery-btn" width="13" height="24" viewBox="0 0 13 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
