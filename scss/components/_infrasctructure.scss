@@ -1,34 +1,144 @@
 .infrastructure {
   background-color: #ede9e3;
-  padding-top: 100px;
-  padding-bottom: 100px;
+
+    @media screen and (min-width: 320px) {
+        padding-top: 60px;
+      }
+    
+      @media screen and (min-width: 768px) {
+      padding-top: 100px;
+      }
+    
+      @media screen and (min-width: 1174px) {
+        padding-top: 100px;
+      }
 }
 
 .infrastructure-title {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 40px;
   color: #7e6d53;
-  margin-bottom: 20px;
+    @media screen and (min-width: 320px) {
+    
+        font-size: 28px;
+        color: #7e6d53;
+        margin-bottom: 24px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        font-size: 40px;
+        margin-bottom: 24px;
+      }
+    
+      @media screen and (min-width: 1174px) {
+      font-size: 40px;
+      margin-bottom: 20px;
+      }
+
+ 
 }
 
 .infrastructure-bg {
   position: relative;
-  background-image: url(../img/Infrastructure.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 1144px;
-  height: 486px;
+
+    max-width: 1144px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url(../img/mobile/infrastructure@2x-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    @media screen and (min-width: 320px) {
+      background-image: url(../img/tablet/infrastructure@2x-tablet.png);
+  
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        height: 486px;
+        background-image: url(../img/tablet/infrastructure@2x-tablet.png);
+      }
+    }
+  
+    @media screen and (min-width: 1199.98px) {
+      height: 486px;
+      background-image: url(../img/Infrastructure.png);
+  
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/infrastructure@2x-desktop.png);
+      }
+    }
 }
 
-.infrastructure-box{
-    position: absolute;
-      top: 8px;
-      right: 168px;
-      border-radius: 8px;
-      width: 331px;
-      height: 470px;
-      background: #fcfcfb;
-      opacity: .8;
+.infra-foto {
+  width: 101px;
+  height: 101px;
+}
+
+.infra-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #7e6d53;
+}
+
+.infra-list > .item {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.infra-list {
+
+  display: flex;
+  flex-direction: column;
+
+    @media screen and (min-width: 320px) {
+        gap: 5px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        gap: 50px;
+      }
+    
+      @media screen and (min-width: 1174px) {
+        gap: 60px;
+      }
+}
+
+.infrastructure-box {
+  position: absolute;
+  border-radius: 8px;
+  background: #fcfcfb;
+  opacity: 0.8;
+
+
+  @media screen and (min-width: 320px) {
+  padding: 24px 18px;
+    width: 280px;
+    top: 40px;
+    right: 5px;
+  }
+
+  @media screen and (min-width: 768px) {
+padding: 24px 32px;
+  width: 331px;
+  height: 470px;
+  top: 8px;
+  right: 16px;
+  }
+
+  @media screen and (min-width: 1174px) {
+  padding: 24px 32px;
+    width: 331px;
+    top: 8px;
+    right: 168px;
+  }
 }

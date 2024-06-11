@@ -5,17 +5,66 @@
   position: relative;
 }
 
-.footer>.container {
+.footer > .container {
   display: flex;
-  justify-content: space-between;
+
+  @media screen and (min-width: 320px) {
+    margin-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1174px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.footer-box1 {
+  display: flex;
+  @media screen and (min-width: 320px) {
+    gap: 46px;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 83px;
+  }
+
+  @media screen and (min-width: 1174px) {
+    gap: 208px;
+  }
+}
+
+.footer-box {
+  @media screen and (min-width: 320px) {
+    width: 135px;
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1174px) {
+  }
 }
 
 .logo {
   width: 56px;
   height: 56px;
   fill: #fff;
-}
 
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
 
 .footer-title {
   font-family: var(--second-family);
@@ -30,7 +79,6 @@
   flex-direction: column;
   gap: 16px;
 }
-
 
 .footer-menu-link {
   font-family: var(--second-family);
@@ -52,7 +100,6 @@
   color: #fff;
 }
 
-
 .privacy-policy {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -63,8 +110,21 @@
 
 .social-list {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+
+  @media screen and (min-width: 320px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1174px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .social-svg {
@@ -74,7 +134,18 @@
 }
 
 .footer-box4 {
-right: 600px;
   position: absolute;
   bottom: 10px;
+
+  @media screen and (min-width: 320px) {
+    right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    right: 100px;
+  }
+
+  @media screen and (min-width: 1174px) {
+  right: 300px;
+  }
 }

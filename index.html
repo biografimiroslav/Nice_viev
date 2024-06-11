@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nice viev</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
-
 
 <body>
     <header class="header">
@@ -17,43 +16,49 @@
             <span class="header-logo"> NICE VIEW </span>
             <ul class="header-list">
                 <li class="item">
-                    <a href="" class="header-link">
-                        Home
-                    </a>
+                    <a href="" class="header-link"> Home </a>
                 </li>
                 <li class="item">
-                    <a href="" class="header-link">
-                        About
-                    </a>
+                    <a href="" class="header-link"> About </a>
                 </li>
                 <li class="item">
-                    <a href="" class="header-link">
-                        Apartments
-                    </a>
+                    <a href="" class="header-link"> Apartments </a>
                 </li>
                 <li class="item">
-                    <a href="" class="header-link">
-                        Infrastucture
-                    </a>
+                    <a href="" class="header-link"> Infrastucture </a>
                 </li>
                 <li class="item">
-                    <a href="" class="header-link">
-                        Gallery
-                    </a>
+                    <a href="" class="header-link"> Gallery </a>
                 </li>
                 <li class="item">
-                    <a href="" class="header-link">
-                        Contacts
-                    </a>
+                    <a href="" class="header-link"> Contacts </a>
                 </li>
             </ul>
-            <button class="header-button" type="button">
-                Contuct us
+            <button class="header-button" type="button">Contuct us</button>
+            <!-- button mobile -->
+            <button class="button-mobile" data-menu-button>
+                <svg class="icon-mobile" aria-label="переключатель меню">
+                    <use href="./img/symbol-defs.svg#icon-menu" class="icon-menu"></use>
+                    <use href="./img/symbol-defs.svg#icon-close-mobile" class="icon-close"></use>
+                </svg>
             </button>
         </div>
     </header>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu" data-menu>
+        <ul class="mobile-list">
+            <li class="item"><a href="" class="mobile-link">Home</a></li>
+            <li class="item"><a href="" class="mobile-link">About</a></li>
+            <li class="item"><a href="" class="mobile-link">Apartments</a></li>
+            <li class="item"><a href="" class="mobile-link">Infrastructure</a></li>
+            <li class="item"><a href="" class="mobile-link">Gallery</a></li>
+            <li class="item"><a href="" class="mobile-link">Contacts</a></li>
+        </ul>
+    </div>
+
     <main>
-        <section class="main-page">
+        <!-- <section class="main-page">
             <div class="container">
                 <h1 class="main-page-title">
                     Nice view
@@ -65,8 +70,8 @@
                     Contact us
                 </button>
             </div>
-        </section>
-        <section class="philosophy">
+        </section> -->
+        <!-- <section class="philosophy">
             <div class="container">
                 <div class="philosophy-bg">
                     <ul class="philosophy-list">
@@ -107,23 +112,23 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
         <section class="appartaments">
             <div class="container">
                 <h2 class="appartaments-title">Choose your apartment</h2>
                 <ul class="appartaments-list">
                     <li class="item">
-                        <img src="./img/appartaments-1.jpg" alt="" width="244">
+                        <img src="./img/appartaments-1.jpg" alt="" width="244" />
                         <h3 class="appartaments-title3">Type 1</h3>
                         <p class="appartaments-text">total area 23 meters</p>
                     </li>
                     <li class="item">
-                        <img src="./img/appartaments-2.jpg" alt="" width="244">
+                        <img src="./img/appartaments-2.jpg" alt="" width="244" />
                         <h3 class="appartaments-title3">Type 2</h3>
                         <p class="appartaments-text">total area 27 meters</p>
                     </li>
                     <li class="item">
-                        <img src="./img/appartaments-3.jpg" alt="" width="244">
+                        <img src="./img/appartaments-3.jpg" alt="" width="244" />
                         <h3 class="appartaments-title3">Type 3</h3>
                         <p class="appartaments-text">total area 31 meters</p>
                     </li>
@@ -137,7 +142,20 @@
                 <h2 class="infrastructure-title">Infrastructure</h2>
                 <div class="infrastructure-bg">
                     <div class="infrastructure-box">
-
+                        <ul class="infra-list">
+                            <li class="item">
+                                <img class="infra-foto" src="./img/infrastructure-1.png" alt="" />
+                                <p class="infra-text">to the supermaket</p>
+                            </li>
+                            <li class="item">
+                                <p class="infra-text">to the supermaket</p>
+                                <img class="infra-foto" src="./img/infrastructure-2.png" alt="" />
+                            </li>
+                            <li class="item">
+                                <img class="infra-foto" src="./img/infrastructure-3.png" alt="" />
+                                <p class="infra-text">to the supermaket</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -157,53 +175,57 @@
                         <li class="item">
                             <picture>
                                 <source srcset="./img/galery-3.jpg, /img/galery-3.jpg" type="image/webp"
-                                    media="(min-width: 1174px)">
+                                    media="(min-width: 1174px)" />
 
-                                <source
-                                    srcset="./img/tablet/galery@1x-tablet.jpg 1x, ./img/tablet/galery@2x-tablet.jpg 2x"
-                                    type="image/webp" media="(min-width: 768px)">
+                                <source srcset="
+                      ./img/tablet/galery@1x-tablet.jpg 1x,
+                      ./img/tablet/galery@2x-tablet.jpg 2x
+                    " type="image/webp" media="(min-width: 768px)" />
 
-                                <source
-                                    srcset="./img/mobile/galery@2x-mobile.jpg 1x, ./img/mobile/galery@2x-mobile.jpg 2x"
-                                    type="image/webp" media="(max-width: 767px)">
+                                <source srcset="
+                      ./img/mobile/galery@2x-mobile.jpg 1x,
+                      ./img/mobile/galery@2x-mobile.jpg 2x
+                    " type="image/webp" media="(max-width: 767px)" />
 
-                                <img src="./img/galery-3.jpg" alt="" width="77">
+                                <img src="./img/galery-3.jpg" alt="" width="77" />
                             </picture>
                         </li>
 
                         <li class="item">
                             <picture>
                                 <source srcset="./img/galery-2.jpg, ./img/galery-2.jpg" type="image/webp"
-                                    media="(min-width: 1174px)">
+                                    media="(min-width: 1174px)" />
 
-                                <source
-                                    srcset="./img/tablet/galery@1x-tablet-1.jpg 1x, ./img/tablet/galery@2x-tablet-1.jpg 2x"
-                                    type="image/webp" media="(min-width: 768px)">
+                                <source srcset="
+                      ./img/tablet/galery@1x-tablet-1.jpg 1x,
+                      ./img/tablet/galery@2x-tablet-1.jpg 2x
+                    " type="image/webp" media="(min-width: 768px)" />
 
-                                <source
-                                    srcset="./img/mobile/galery@2x-mobile-2.jpg 1x, ./img/mobile/galery@2x-mobile-2.jpg 2x"
-                                    type="image/webp" media="(max-width: 767px)">
+                                <source srcset="
+                      ./img/mobile/galery@2x-mobile-2.jpg 1x,
+                      ./img/mobile/galery@2x-mobile-2.jpg 2x
+                    " type="image/webp" media="(max-width: 767px)" />
 
-                                <img src="./img/galery-2.jpg" alt="" width="596">
+                                <img src="./img/galery-2.jpg" alt="" width="596" />
                             </picture>
-
                         </li>
                         <li class="item">
                             <picture>
                                 <source srcset="./img/galery-1.jpg, /img/galery-1.jpg" type="image/webp"
-                                    media="(min-width: 1174px)">
+                                    media="(min-width: 1174px)" />
 
-                                <source
-                                    srcset="./img/tablet/galery@1x-tablet-2.jpg 1x, ./img/tablet/galery@2x-tablet-2.jpg 2x"
-                                    type="image/webp" media="(min-width: 768px)">
+                                <source srcset="
+                      ./img/tablet/galery@1x-tablet-2.jpg 1x,
+                      ./img/tablet/galery@2x-tablet-2.jpg 2x
+                    " type="image/webp" media="(min-width: 768px)" />
 
-                                <source
-                                    srcset="./img/mobile/galery@2x-mobile-1.jpg  1x, ./img/mobile/galery@2x-mobile-1.jpg 2x"
-                                    type="image/webp" media="(max-width: 767px)">
+                                <source srcset="
+                      ./img/mobile/galery@2x-mobile-1.jpg 1x,
+                      ./img/mobile/galery@2x-mobile-1.jpg 2x
+                    " type="image/webp" media="(max-width: 767px)" />
 
-                                <img src="./img/galery-1.jpg" alt="" width="77">
+                                <img src="./img/galery-1.jpg" alt="" width="77" />
                             </picture>
-
                         </li>
                     </ul>
                     <svg class="galery-btn" width="13" height="24" viewBox="0 0 13 24" fill="none"
@@ -217,12 +239,8 @@
         </section>
         <section class="get_in_touch">
             <div class="container">
-                <h2 class="get_in_touch_tex">
-                    Get in touch!
-                </h2>
-                <h3 class="get_in_touch_text">
-                    Contact us for a quote.
-                </h3>
+                <h2 class="get_in_touch_tex">Get in touch!</h2>
+                <h3 class="get_in_touch_text">Contact us for a quote.</h3>
                 <div class="contact">
                     <ul class="contact-list">
                         <li class="contact-item">
@@ -235,66 +253,75 @@
                             <p class="contact-p">(+33)7 00 55 54 79</p>
                         </li>
                     </ul>
-                    <button class="contact-butt" type="button" data-modal-open-btn>Contact us</button>
+                    <button class="contact-butt" type="button" data-modal-open-btn>
+                        Contact us
+                    </button>
                 </div>
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container">
-            <div class="footer-box1">
+            <div class="footer-box">
                 <svg class="logo" width="40" height="40">
                     <use href="./img/symbol-defs.svg#icon-logo"></use>
                 </svg>
             </div>
-            <div class="footer-box2">
-                <h2 class="footer-title">Navigation</h2>
-                <ul class="footer-list-menu">
-                    <li class="item">
-                        <a href="" class="footer-menu-link">Home</a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="footer-menu-link">About</a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="footer-menu-link">Apartments</a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="footer-menu-link">Infrastructure</a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="footer-menu-link">Gallery</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-box3">
-                <h2 class="footer-title">Contacts</h2>
-                <ul class="footer-contakts">
-                    <li class="item">
-                        <a href="" class="footer-menu-link">(406) 555-0120</a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="footer-menu-link">ul. Chodkiewicza Karola 111, Chorzów</a>
-                    </li>
-                    <li class="item">
-                        <a href="" class="footer-menu-link">deanna.curtis@example.com</a>
-                    </li>
-                </ul>
+            <div class="footer-box1">
+                <div class="footer-box">
+                    <h2 class="footer-title">Navigation</h2>
+                    <ul class="footer-list-menu">
+                        <li class="item">
+                            <a href="" class="footer-menu-link">Home</a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="footer-menu-link">About</a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="footer-menu-link">Apartments</a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="footer-menu-link">Infrastructure</a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="footer-menu-link">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h2 class="footer-title">Contacts</h2>
+                    <ul class="footer-contakts">
+                        <li class="item">
+                            <a href="" class="footer-menu-link">(406) 555-0120</a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="footer-menu-link">ul. Chodkiewicza Karola 111, Chorzów</a>
+                        </li>
+                        <li class="item">
+                            <a href="" class="footer-menu-link">deanna.curtis@example.com</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <ul class="social-list">
-                <li class="item"> <svg class="social-svg" width="40" height="40">
+                <li class="item">
+                    <svg class="social-svg" width="40" height="40">
                         <use href="./img/symbol-defs.svg#icon-youtube"></use>
                     </svg>
                 </li>
-                <li class="item"> <svg class="social-svg" width="40" height="40">
+                <li class="item">
+                    <svg class="social-svg" width="40" height="40">
                         <use href="./img/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                 </li>
-                <li class="item"> <svg class="social-svg" width="40" height="40">
+                <li class="item">
+                    <svg class="social-svg" width="40" height="40">
                         <use href="./img/symbol-defs.svg#icon-twiter"></use>
                     </svg>
                 </li>
-                <li class="item"> <svg class="social-svg" width="40" height="40">
+                <li class="item">
+                    <svg class="social-svg" width="40" height="40">
                         <use href="./img/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                 </li>
@@ -307,7 +334,6 @@
                 </p>
             </div>
         </div>
-
     </footer>
     <!--модільне вікно -->
     <div class="backdrop is-hidden" data-modal>
@@ -322,13 +348,13 @@
                 <div class="form-fiel">
                     <label for="username" class="form-label">Name</label>
                     <div class="modal-position">
-                        <input type="text" id="username" class="form-input" autofocus required placeholder="Yuliia ">
+                        <input type="text" id="username" class="form-input" autofocus required placeholder="Yuliia " />
                     </div>
                 </div>
                 <div class="form-fiel">
                     <label for="phone" class="form-label">Telephone</label>
                     <div class="modal-position">
-                        <input type="tel" id="phone" class="form-input" autofocus required placeholder="+380">
+                        <input type="tel" id="phone" class="form-input" autofocus required placeholder="+380" />
                     </div>
                 </div>
 
@@ -336,13 +362,13 @@
                     <label for="email" class="form-label">Email</label>
                     <div class="modal-position">
                         <input type="email" id="email" class="form-input" autofocus required
-                            placeholder="Contact@gmail.com">
+                            placeholder="Contact@gmail.com" />
                     </div>
                 </div>
-
-
             </form>
-            <button class="modal-submit" type="submit" data-modal-close>Contact us</button>
+            <button class="modal-submit" type="submit" data-modal-close>
+                Contact us
+            </button>
         </div>
     </div>
 
@@ -356,23 +382,25 @@
                 </svg>
             </button>
             <div class="contact-box">
-                <img src="./img/modal-img.jpg" alt="" width="238">
+                <img src="./img/modal-img.jpg" alt="" width="238" />
                 <div>
                     <address class="address">
                         <p class="address-text">Total area: 50.2 m2</p>
                         <p class="address-text">Rooms: 1</p>
                         <p class="address-text">from 1000 dol/m2</p>
                         <p class="address-text-smol">about 50 200 dollars</p>
-                        <button class="modal-submit--sais" type="submit" data-modal-close-btn>Contact us</button>
+                        <button class="modal-submit--sais" type="submit" data-modal-close-btn>
+                            Contact us
+                        </button>
                     </address>
                 </div>
             </div>
-
-
         </div>
     </div>
-    <script src="./js/modal.js" type="module"></script>
-    <script src="./js/touch-modal.js" type="module"></script>
+
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <!-- <script src="./js/modal.js" type="module"></script> -->
+    <!-- <script src="./js/touch-modal.js" type="module"></script> -->
 </body>
 
 </html>
