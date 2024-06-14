@@ -1,4 +1,4 @@
-.button-mobile{
+.button-mobile {
   position: relative;
 
   z-index: 120;
@@ -7,38 +7,37 @@
 
   display: -webkit-box;
 
-    @media screen and (min-width: 768px) {
-     display: none;
-      }
-}
-
-.icon-mobile{
-    position: absolute;
-
-      right: 0px;
-      top: -25px;
-      width: 40px;
-      height: 40px;
-
-      fill: #ffff;
-
-}
-
-.icon-close{
-  display: none;
-}
-
-.is-open{
-  .icon-close{
-    display: block;
-  }
-
-  .icon-menu{
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.mobile-menu{
+.icon-mobile {
+  position: absolute;
+
+  right: 0px;
+  top: -25px;
+  width: 40px;
+  height: 40px;
+
+  fill: #ffff;
+}
+
+.icon-close {
+  display: none;
+}
+
+.is-open {
+  .icon-close {
+    display: block;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+}
+
+.mobile-menu {
   position: fixed;
   display: flex;
   text-align: center;
@@ -57,21 +56,21 @@
   right: -100%;
   transition: right 0.5s;
 
-  &.is-open{
+  &.is-open {
     right: 0;
   }
 }
 
-.mobile-list{
+.mobile-list {
   display: flex;
-    flex-direction: column;
-    gap: 24px;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.mobile-link{
+.mobile-link {
   font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: #fcfcfb;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fcfcfb;
 }
