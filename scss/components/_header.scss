@@ -2,20 +2,20 @@
   background: linear-gradient(213deg, #2d2a22 0%, #7e6d53 100%);
   display: flex;
 
-    @media screen and (min-width: 320px) {
-        padding-top: 28px;
-        padding-bottom: 28px;
-      }
-    
-      @media screen and (min-width: 768px) {
-      padding-top: 22px;
-        padding-bottom: 22px;
-      }
-    
-      @media screen and (min-width: 1174px) {
-      padding-top: 40px;
-        padding-bottom: 40px;
-      }
+  @media screen and (min-width: 320px) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  @media screen and (min-width: 1174px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .header > .container {

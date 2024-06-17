@@ -394,7 +394,7 @@ address {
 }
 @media screen and (min-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 1199.98px) and (min-resolution: 2dppx) {
   .infrastructure-bg {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/infrastructure@2x-desktop.png);
+    background-image: url(../img/infrastructure@2x-desktop.png);
   }
 }
 
