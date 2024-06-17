@@ -232,7 +232,7 @@ address {
 @media screen and (min-width: 320px) and (min-width: 1199.98px) {
   .main-page {
     height: 720px;
-    background-image: url(../../img/main-pages.png);
+    background-image: url(../img/main-pages.png);
   }
 }
 @media screen and (min-width: 320px) and (min-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-width: 1199.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-width: 1199.98px) and (min-resolution: 2dppx) {
@@ -317,34 +317,34 @@ address {
   height: 630px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../../img/mobile/philosophy@2x-mobile.png);
+  background-image: url(../img/mobile/philosophy@2x-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media screen and (min-width: 320px) {
   .philosophy {
-    background-image: url(../../img/mobile/philosophy@2x-mobile.png);
+    background-image: url(../img/mobile/philosophy@2x-mobile.png);
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .philosophy {
     width: 768px;
     height: 720px;
-    background-image: url(../../img/tablet/philosophy@2x-tablet.png);
+    background-image: url(../img/tablet/philosophy@2x-tablet.png);
   }
 }
 @media screen and (min-width: 1173.98px) {
   .philosophy {
     width: 1280px;
     height: 677px;
-    background-image: url(../../img/philosophy@2x-desctop.png);
+    background-image: url(../img/philosophy@2x-desctop.png);
   }
 }
 @media screen and (min-width: 1173.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 1173.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1173.98px) and (min-resolution: 192dpi), screen and (min-width: 1173.98px) and (min-resolution: 2dppx) {
   .philosophy {
     width: 1280px;
-    background-image: url(../../img/philosophy@2x-desctop.png);
+    background-image: url(../img/philosophy@2x-desctop.png);
   }
 }
 
